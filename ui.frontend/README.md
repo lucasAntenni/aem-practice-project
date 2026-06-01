@@ -18,16 +18,16 @@
 
 ## Installation
 
-1. Install [NodeJS](https://nodejs.org/en/download/) (v10+), globally. This will also install `npm`.
-2. Navigate to `ui.frontend` in your project and run `npm ci`. (You must have run the archetype with `-DfrontendModule=general` to populate the ui.frontend folder)
+1. Install [NodeJS](https://nodejs.org/en/download/) (v10+), globally. This will also install `npm`, but the project uses `pnpm` for frontend package management.
+2. Navigate to `ui.frontend` in your project and run `pnpm install`. (You must have run the archetype with `-DfrontendModule=general` to populate the ui.frontend folder)
 
 ## Usage
 
-The following npm scripts drive the frontend workflow:
+The following frontend scripts drive the frontend workflow using `pnpm`:
 
-* `npm run dev` - Full build of client libraries with JS optimization disabled (tree shaking, etc) and source maps enabled and CSS optimization disabled.
-* `npm run prod` - Full build of client libraries build with JS optimization enabled (tree shaking, etc), source maps disabled and CSS optimization enabled.
-* `npm run start` - Starts a static webpack development server for local development with minimal dependencies on AEM.
+* `pnpm run dev` - Full build of client libraries with JS optimization disabled (tree shaking, etc) and source maps enabled and CSS optimization disabled.
+* `pnpm run prod` - Full build of client libraries build with JS optimization enabled (tree shaking, etc), source maps disabled and CSS optimization enabled.
+* `pnpm run start` - Starts a static webpack development server for local development with minimal dependencies on AEM.
 
 ### General
 
@@ -106,5 +106,5 @@ Included in the ui.frontend module is a [webpack-dev-server](https://github.com/
 
 1. From within the root of the project run the command `mvn -PautoInstallSinglePackage clean install` to install the entire project to an AEM instance running at `localhost:4502`
 2. Navigate inside the `ui.frontend` folder.
-3. Run the following command `npm run start` to start the webpack dev server. Once started it should open a browser (localhost:8080 or the next available port).
+3. Run the following command `pnpm run start` to start the webpack dev server. Once started it should open a browser (localhost:8080 or the next available port).
 4. You can now modify CSS, JS, SCSS, and TS files and see the changes immediately reflected in the webpack dev server.

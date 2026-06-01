@@ -2,6 +2,7 @@
   "name": "aem-maven-archetype",
   "version": "1.0.0",
   "description": "Generates an AEM Frontend project with Webpack",
+  "packageManager": "pnpm@8.11.0",
   "repository": {
     "type": "git",
     "url": ""

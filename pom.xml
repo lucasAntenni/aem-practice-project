@@ -232,6 +232,8 @@
             <nodeVersion>v24.16.0</nodeVersion>
                                     
             <npmVersion>8.15.0</npmVersion>
+            
+            <pnpmVersion>v8.11.0</pnpmVersion>
                                 
           </configuration>
                               
@@ -256,6 +258,30 @@
               <goals>
                                                 
                 <goal>npm</goal>
+                                            
+              </goals>
+                                      
+            </execution>
+            
+            <execution>
+                                          
+              <id>install node and pnpm</id>
+                                          
+              <goals>
+                                                
+                <goal>install-node-and-pnpm</goal>
+                                            
+              </goals>
+                                      
+            </execution>
+            
+            <execution>
+                                          
+              <id>pnpm install</id>
+                                          
+              <goals>
+                                                
+                <goal>pnpm</goal>
                                             
               </goals>
                                       
