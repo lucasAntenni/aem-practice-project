@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/viajar" mode="merge"/>
+    <filter root="/content/viajar" mode="merge"/>
+    <filter root="/content/dam/viajar/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/viajar" mode="merge"/>
+</workspaceFilter>
